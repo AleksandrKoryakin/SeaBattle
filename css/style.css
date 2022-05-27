@@ -105,7 +105,7 @@ svg {
 }
 
 .setupPanel__title {
-  margin-bottom: 1em;
+  margin-bottom: .5em;
   padding-top: 10%;
   font-size: 24px;
   font-weight: 700;
@@ -113,7 +113,7 @@ svg {
 }
 
 .field {
-  margin-bottom: 2em;
+  margin-bottom: .5em;
   display: flex;
   flex-direction: column;
   width: 500px;
@@ -150,6 +150,32 @@ svg {
   height: 100%;
   background-color: aqua;
   outline: 1px solid green;
+  cursor: pointer;
+}
+
+.choose-direction-menu {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  width: 200px;
+}
+
+.rotate-btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/rotate.svg");
+  background-size: cover;
+  cursor: pointer;
+}
+
+.battleship-direction {
+  font-weight: 700;
+  font-size: 24px;
+  color: darkred;
 }
 
 .battleships {
@@ -167,6 +193,7 @@ svg {
   width: 180px;
   height: 47px;
   background-color: var(--orange);
+  cursor: pointer;
 }
 
 .column3x {
@@ -178,6 +205,7 @@ svg {
   width: 135px;
   height: 45px;
   background-color: var(--orange);
+  cursor: pointer;
 }
 
 .battleship3x:not(:last-child) {
@@ -193,6 +221,7 @@ svg {
   width: 90px;
   height: 45px;
   background-color: var(--orange);
+  cursor: pointer;
 }
 
 .battleship2x:not(:last-child) {
@@ -208,6 +237,7 @@ svg {
   width: 45px;
   height: 45px;
   background-color: var(--orange);
+  cursor: pointer;
 }
 
 .battleship1x:not(:last-child) {
